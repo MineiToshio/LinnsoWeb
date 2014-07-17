@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97478F87-4A4C-4FD0-854F-A8C1F78D39A1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Linnso.Website.PL.Web</RootNamespace>
+    <AssemblyName>Linnso.Website.PL.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\error.css" />
+    <Content Include="css\error.min.css">
+      <DependentUpon>error.css</DependentUpon>
+    </Content>
+    <Content Include="css\linnso.css" />
+    <Content Include="css\style_total.css">
+      <DependentUpon>style_total.css.bundle</DependentUpon>
+    </Content>
+    <Content Include="css\style_total.min.css">
+      <DependentUpon>style_total.css.bundle</DependentUpon>
+    </Content>
+    <Content Include="css\dark.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\hover_image_ex9.css" />
+    <Content Include="css\hover_image.css" />
+    <Content Include="css\light.css" />
+    <Content Include="css\media.css" />
+    <Content Include="css\prettyPhoto.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\shortcodes.css" />
+    <Content Include="css\skeleton.css" />
+    <Content Include="css\social.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\supersized.css" />
+    <Content Include="css\supersized.shutter.css" />
+    <Content Include="css\YTPlayer.css" />
+    <Content Include="errors\404.aspx" />
+    <Content Include="errors\default_error.aspx" />
+    <Content Include="fonts\BebasNeue-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\PTN77F-webfont.svg" />
+    <Content Include="images\clients\client10.png" />
+    <Content Include="images\clients\client11.png" />
+    <Content Include="images\clients\client12.png" />
+    <Content Include="images\clients\client13.png" />
+    <Content Include="images\clients\client6.png" />
+    <Content Include="images\clients\client7.png" />
+    <Content Include="images\clients\client8.png" />
+    <Content Include="images\clients\client9.png" />
+    <Content Include="images\error\gears.png" />
+    <Content Include="images\error\noise.gif" />
+    <Content Include="images\favilogo.ico" />
+    <Content Include="images\logo3.png" />
+    <Content Include="images\logo4.png" />
+    <Content Include="images\luz\biblia.jpg" />
+    <Content Include="images\luz\evangelizar.jpg" />
+    <Content Include="images\luz\iglesia.jpg" />
+    <Content Include="images\luz\orar.jpg" />
+    <Content Include="images\parallax\parallax5.jpg" />
+    <Content Include="images\parallax\parallax6.jpg" />
+    <Content Include="images\portfolio\portfolio1.jpg" />
+    <Content Include="images\portfolio\portfolio10.jpg" />
+    <Content Include="images\portfolio\portfolio10\1.jpg" />
+    <Content Include="images\portfolio\portfolio10\2.jpg" />
+    <Content Include="images\portfolio\portfolio10\3.jpg" />
+    <Content Include="images\portfolio\portfolio11.jpg" />
+    <Content Include="images\portfolio\portfolio11\1.jpg" />
+    <Content Include="images\portfolio\portfolio11\2.jpg" />
+    <Content Include="images\portfolio\portfolio11\3.jpg" />
+    <Content Include="images\portfolio\portfolio11\4.jpg" />
+    <Content Include="images\portfolio\portfolio11\5.jpg" />
+    <Content Include="images\portfolio\portfolio11\6.jpg" />
+    <Content Include="images\portfolio\portfolio12.jpg" />
+    <Content Include="images\portfolio\portfolio12\1.jpg" />
+    <Content Include="images\portfolio\portfolio12\2.jpg" />
+    <Content Include="images\portfolio\portfolio12\3.jpg" />
+    <Content Include="images\portfolio\portfolio13.png" />
+    <Content Include="images\portfolio\portfolio13\1.png" />
+    <Content Include="images\portfolio\portfolio13\2.png" />
+    <Content Include="images\portfolio\portfolio13\3.png" />
+    <Content Include="images\portfolio\portfolio13\4.png" />
+    <Content Include="images\portfolio\portfolio13\5.png" />
+    <Content Include="images\portfolio\portfolio1\1.jpg" />
+    <Content Include="images\portfolio\portfolio1\2.jpg" />
+    <Content Include="images\portfolio\portfolio1\3.jpg" />
+    <Content Include="images\portfolio\portfolio1\4.jpg" />
+    <Content Include="images\portfolio\portfolio1\5.jpg" />
+    <Content Include="images\portfolio\portfolio2.jpg" />
+    <Content Include="images\portfolio\portfolio2\1.jpg" />
+    <Content Include="images\portfolio\portfolio2\2.jpg" />
+    <Content Include="images\portfolio\portfolio3.jpg" />
+    <Content Include="images\portfolio\portfolio3\1.jpg" />
+    <Content Include="images\portfolio\portfolio3\2.jpg" />
+    <Content Include="images\portfolio\portfolio3\3.jpg" />
+    <Content Include="images\portfolio\portfolio3\4.jpg" />
+    <Content Include="images\portfolio\portfolio3\5.jpg" />
+    <Content Include="images\portfolio\portfolio4.png" />
+    <Content Include="images\portfolio\portfolio4\1.png" />
+    <Content Include="images\portfolio\portfolio4\2.png" />
+    <Content Include="images\portfolio\portfolio4\3.png" />
+    <Content Include="images\portfolio\portfolio4\4.png" />
+    <Content Include="images\portfolio\portfolio4\5.png" />
+    <Content Include="images\portfolio\portfolio5.jpg" />
+    <Content Include="images\portfolio\portfolio5\1.jpg" />
+    <Content Include="images\portfolio\portfolio5\2.jpg" />
+    <Content Include="images\portfolio\portfolio5\3.jpg" />
+    <Content Include="images\portfolio\portfolio5\4.jpg" />
+    <Content Include="images\portfolio\portfolio5\5.jpg" />
+    <Content Include="images\portfolio\portfolio5\6.jpg" />
+    <Content Include="images\portfolio\portfolio5\7.jpg" />
+    <Content Include="images\portfolio\portfolio5\8.jpg" />
+    <Content Include="images\portfolio\portfolio6.jpg" />
+    <Content Include="images\portfolio\portfolio6\1.jpg" />
+    <Content Include="images\portfolio\portfolio6\2.jpg" />
+    <Content Include="images\portfolio\portfolio6\3.jpg" />
+    <Content Include="images\portfolio\portfolio6\4.jpg" />
+    <Content Include="images\portfolio\portfolio6\5.jpg" />
+    <Content Include="images\portfolio\portfolio6\6.jpg" />
+    <Content Include="images\portfolio\portfolio7.jpg" />
+    <Content Include="images\portfolio\portfolio7\1.jpg" />
+    <Content Include="images\portfolio\portfolio7\2.jpg" />
+    <Content Include="images\portfolio\portfolio7\3.jpg" />
+    <Content Include="images\portfolio\portfolio8.jpg" />
+    <Content Include="images\portfolio\portfolio8\1.jpg" />
+    <Content Include="images\portfolio\portfolio8\2.jpg" />
+    <Content Include="images\portfolio\portfolio9.png" />
+    <Content Include="images\arrow_left.png" />
+    <Content Include="images\arrow_right.png" />
+    <Content Include="images\backtotop.png" />
+    <Content Include="images\clients\client1.png" />
+    <Content Include="images\clients\client2.png" />
+    <Content Include="images\clients\client3.png" />
+    <Content Include="images\clients\client4.png" />
+    <Content Include="images\clients\client5.png" />
+    <Content Include="images\icons\icons\banknote.png" />
+    <Content Include="images\icons\icons\bubble.png" />
+    <Content Include="images\icons\icons\bulb.png" />
+    <Content Include="images\icons\icons\calendar.png" />
+    <Content Include="images\icons\icons\camera.png" />
+    <Content Include="images\icons\icons\clip.png" />
+    <Content Include="images\icons\icons\clock.png" />
+    <Content Include="images\icons\icons\cloud.png" />
+    <Content Include="images\icons\icons\cup.png" />
+    <Content Include="images\icons\icons\data.png" />
+    <Content Include="images\icons\icons\diamond.png" />
+    <Content Include="images\icons\icons\display.png" />
+    <Content Include="images\icons\icons\eye.png" />
+    <Content Include="images\icons\icons\fire.png" />
+    <Content Include="images\icons\icons\food.png" />
+    <Content Include="images\icons\icons\heart.png" />
+    <Content Include="images\icons\icons\key.png" />
+    <Content Include="images\icons\icons\lab.png" />
+    <Content Include="images\icons\icons\like.png" />
+    <Content Include="images\icons\icons\location.png" />
+    <Content Include="images\icons\icons\lock.png" />
+    <Content Include="images\icons\icons\mail.png" />
+    <Content Include="images\icons\icons\megaphone.png" />
+    <Content Include="images\icons\icons\music.png" />
+    <Content Include="images\icons\icons\news.png" />
+    <Content Include="images\icons\icons\note.png" />
+    <Content Include="images\icons\icons\paperplane.png" />
+    <Content Include="images\icons\icons\params.png" />
+    <Content Include="images\icons\icons\pen.png" />
+    <Content Include="images\icons\icons\phone.png" />
+    <Content Include="images\icons\icons\photo.png" />
+    <Content Include="images\icons\icons\search.png" />
+    <Content Include="images\icons\icons\settings.png" />
+    <Content Include="images\icons\icons\shop.png" />
+    <Content Include="images\icons\icons\sound.png" />
+    <Content Include="images\icons\icons\stack.png" />
+    <Content Include="images\icons\icons\star.png" />
+    <Content Include="images\icons\icons\study.png" />
+    <Content Include="images\icons\icons\t-shirt.png" />
+    <Content Include="images\icons\icons\tag.png" />
+    <Content Include="images\icons\icons\trash.png" />
+    <Content Include="images\icons\icons\truck.png" />
+    <Content Include="images\icons\icons\tv.png" />
+    <Content Include="images\icons\icons\user.png" />
+    <Content Include="images\icons\icons\video.png" />
+    <Content Include="images\icons\icons\vynil.png" />
+    <Content Include="images\icons\icons\wallet.png" />
+    <Content Include="images\icons\icons\world.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\mail.png" />
+    <Content Include="images\parallax\parallax1.jpg" />
+    <Content Include="images\parallax\parallax2.jpg" />
+    <Content Include="images\parallax\parallax3.jpg" />
+    <Content Include="images\parallax\parallax4.jpg" />
+    <Content Include="images\pattern.png" />
+    <Content Include="images\plus_minus.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="images\prettyPhoto\default\loader.gif" />
+    <Content Include="images\prettyPhoto\default\sprite.png" />
+    <Content Include="images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="images\progress.gif" />
+    <Content Include="images\selectmenu.png" />
+    <Content Include="images\slider\slider1.jpg" />
+    <Content Include="images\slider\slider2.jpg" />
+    <Content Include="images\slider\slider3.jpg" />
+    <Content Include="images\slider\slider4.jpg" />
+    <Content Include="images\social\icons\email.png" />
+    <Content Include="images\social\icons\facebook.png" />
+    <Content Include="images\social\icons\googleplus.png" />
+    <Content Include="images\social\icons\linkedin.png" />
+    <Content Include="images\social\icons\twitter.png" />
+    <Content Include="images\social\icons\youtube.png" />
+    <Content Include="images\team\team1.jpg" />
+    <Content Include="images\team\team2.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\bootstrap-modal.js" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\isotope.js" />
+    <Content Include="js\jquery-1.8.2.min.js" />
+    <Content Include="js\jquery.appear.js" />
+    <Content Include="js\jquery.easing.min.js" />
+    <Content Include="js\jquery.fittext.js" />
+    <Content Include="js\jquery.fitvids.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.form.js" />
+    <Content Include="js\jquery.mb.YTPlayer.js" />
+    <Content Include="js\jquery.parallax-1.1.3.js" />
+    <Content Include="js\jquery.prettyPhoto.js" />
+    <Content Include="js\jquery.queryloader2.js" />
+    <Content Include="js\jquery.slabtext.min.js" />
+    <Content Include="js\jquery.sticky.js" />
+    <Content Include="js\jquery.tweet.js" />
+    <Content Include="js\js_total.js">
+      <DependentUpon>js_total.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="js\js_total.min.js">
+      <DependentUpon>js_total.js.bundle</DependentUpon>
+    </Content>
+    <Content Include="js\modernizr-2.6.2.min.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\selectnav.min.js" />
+    <Content Include="js\shortcodes.js" />
+    <Content Include="js\SmoothScroll.js" />
+    <Content Include="js\supersized.3.2.7.min.js" />
+    <Content Include="js\supersized.shutter.min.js" />
+    <Content Include="luz.aspx" />
+    <Content Include="projects\project-1.html" />
+    <Content Include="projects\project-10.html" />
+    <Content Include="projects\project-11.html" />
+    <Content Include="projects\project-12.html" />
+    <Content Include="projects\project-2.html" />
+    <Content Include="projects\project-3.html" />
+    <Content Include="projects\project-4.html" />
+    <Content Include="projects\project-5.html" />
+    <Content Include="projects\project-6.html" />
+    <Content Include="projects\project-7.html" />
+    <Content Include="projects\project-8.html" />
+    <Content Include="projects\project-9.html" />
+    <Content Include="Scripts\jquery.alerts-1.1\images\error.png" />
+    <Content Include="Scripts\jquery.alerts-1.1\images\help.gif" />
+    <Content Include="Scripts\jquery.alerts-1.1\images\important.gif" />
+    <Content Include="Scripts\jquery.alerts-1.1\images\info.gif" />
+    <Content Include="Scripts\jquery.alerts-1.1\images\title.gif" />
+    <Content Include="Scripts\jquery.alerts-1.1\jquery.alerts.css" />
+    <Content Include="Scripts\jquery.alerts-1.1\jquery.alerts.js" />
+    <Content Include="_construccion\css\bootstrap-responsive.css" />
+    <Content Include="_construccion\css\bootstrap-responsive.min.css" />
+    <Content Include="_construccion\css\bootstrap.css" />
+    <Content Include="_construccion\css\bootstrap.min.css" />
+    <Content Include="_construccion\css\style.css" />
+    <Content Include="_construccion\images\background-buildings.png" />
+    <Content Include="_construccion\images\background-hello.png" />
+    <Content Include="_construccion\images\background-yellow.png" />
+    <Content Include="_construccion\images\crane.png" />
+    <Content Include="_construccion\images\delicious.png" />
+    <Content Include="_construccion\images\facebook.png" />
+    <Content Include="_construccion\images\favilogo.ico" />
+    <Content Include="_construccion\images\flickr.png" />
+    <Content Include="_construccion\images\google.png" />
+    <Content Include="_construccion\images\ground.png" />
+    <Content Include="_construccion\images\insta.png" />
+    <Content Include="_construccion\images\linkedin.png" />
+    <Content Include="_construccion\images\logo.png" />
+    <Content Include="_construccion\images\lorries.png" />
+    <Content Include="_construccion\images\mail.png" />
+    <Content Include="_construccion\images\midground-3.png" />
+    <Content Include="_construccion\images\midground.png" />
+    <Content Include="_construccion\images\road-seal.png" />
+    <Content Include="_construccion\images\rss.png" />
+    <Content Include="_construccion\images\sky.png" />
+    <Content Include="_construccion\images\small-cranes.png" />
+    <Content Include="_construccion\images\test-icons.png" />
+    <Content Include="_construccion\images\twitter.png" />
+    <Content Include="_construccion\images\vehicles.png" />
+    <Content Include="_construccion\index.aspx" />
+    <Content Include="_construccion\js\jquery.backgroundpos.js" />
+    <Content Include="_construccion\js\jquery.backgroundpos.min.js" />
+    <Content Include="_construccion\js\jquery.countdown.js" />
+    <Content Include="_construccion\js\jquery.countdown.min.js" />
+    <Content Include="_construccion\js\scripts.js" />
+    <Content Include="Global.asax" />
+    <Content Include="_vCards\css\iemobile.css" />
+    <Content Include="_vCards\css\index.html" />
+    <Content Include="_vCards\css\prettyPhoto.css" />
+    <Content Include="_vCards\css\reset.css" />
+    <Content Include="_vCards\css\style.css" />
+    <Content Include="_vCards\fonts\icomoon\icomoon.svg" />
+    <Content Include="_vCards\images\favilogo.ico" />
+    <Content Include="_vCards\images\header-shadow.png" />
+    <Content Include="_vCards\images\logo_completo.png" />
+    <Content Include="_vCards\images\index.html" />
+    <Content Include="_vCards\images\personal-info-sep.png" />
+    <Content Include="_vCards\images\photo-inner.png" />
+    <Content Include="_vCards\images\photo.jpg" />
+    <Content Include="_vCards\images\photo1.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="_vCards\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="_vCards\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="_vCards\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="_vCards\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="_vCards\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="_vCards\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="_vCards\images\prettyPhoto\default\loader.gif" />
+    <Content Include="_vCards\images\prettyPhoto\default\sprite.png" />
+    <Content Include="_vCards\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="_vCards\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="_vCards\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="_vCards\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="_vCards\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="_vCards\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="_vCards\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="_vCards\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="_vCards\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="_vCards\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="_vCards\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="_vCards\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="_vCards\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="_vCards\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="_vCards\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="_vCards\images\sergio.minei.jpg" />
+    <Content Include="_vCards\images\sergio.minei1.jpg" />
+    <Content Include="_vCards\images\tab-hover%402x.png" />
+    <Content Include="_vCards\images\tab-hover.png" />
+    <Content Include="_vCards\sergio_minei.aspx" />
+    <Content Include="_vCards\js\custom.js" />
+    <Content Include="_vCards\js\index.html" />
+    <Content Include="_vCards\js\jquery-ui-map.js" />
+    <Content Include="_vCards\js\jquery.carouFredSel.js" />
+    <Content Include="_vCards\js\jquery.easytabs.min.js" />
+    <Content Include="_vCards\js\jquery.isotope.min.js" />
+    <Content Include="_vCards\js\jquery.min.js" />
+    <Content Include="_vCards\js\jquery.prettyPhoto.js" />
+    <Content Include="_vCards\js\plugins.js" />
+    <Content Include="_vCards\js\respond.min.js" />
+    <Content Include="_vCards\php\index.html" />
+    <Content Include="_vCards\portfolio\agrobusiness-thumb.png" />
+    <Content Include="_vCards\portfolio\agrobusiness.png" />
+    <Content Include="_vCards\portfolio\capper-thumb.png" />
+    <Content Include="_vCards\portfolio\capper.png" />
+    <Content Include="_vCards\portfolio\capper2.png" />
+    <Content Include="_vCards\portfolio\capper3.png" />
+    <Content Include="_vCards\portfolio\crudgen-thumb.png" />
+    <Content Include="_vCards\portfolio\crudgen.png" />
+    <Content Include="_vCards\portfolio\crudgen2.png" />
+    <Content Include="_vCards\portfolio\index.html" />
+    <Content Include="_vCards\portfolio\intranetta-thumb.png" />
+    <Content Include="_vCards\portfolio\intranetta.png" />
+    <Content Include="_vCards\portfolio\maccaferri-thumb.jpg" />
+    <Content Include="_vCards\portfolio\maccaferri.jpg" />
+    <Content Include="_vCards\portfolio\maccaferri2.png" />
+    <Content Include="_vCards\portfolio\navarrete-thumb.jpg" />
+    <Content Include="_vCards\portfolio\navarrete.png" />
+    <Content Include="_vCards\portfolio\webdendro-thumb.png" />
+    <Content Include="_vCards\portfolio\webdendro.png" />
+    <Content Include="_vCards\portfolio\webdendro2.png" />
+    <Content Include="_vCards\portfolio\webdendro3.png" />
+    <Content Include="_vCards\portfolio\webta-thumb.png" />
+    <Content Include="_vCards\portfolio\webta.png" />
+    <Content Include="_vCards\portfolio\webta2.png" />
+    <Content Include="_vCards\portfolio\webta3.png" />
+    <Content Include="_vCards\portfolio\webta4.png" />
+    <Content Include="_vCards\portfolio\webta5.png" />
+    <Content Include="_vCards\portfolio\webta6.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\Tools.cs" />
+    <Compile Include="errors\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errors\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errors\default_error.aspx.cs">
+      <DependentUpon>default_error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errors\default_error.aspx.designer.cs">
+      <DependentUpon>default_error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="luz.aspx.cs">
+      <DependentUpon>luz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="luz.aspx.designer.cs">
+      <DependentUpon>luz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="_construccion\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_construccion\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_vCards\sergio_minei.aspx.cs">
+      <DependentUpon>sergio_minei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_vCards\sergio_minei.aspx.designer.cs">
+      <DependentUpon>sergio_minei.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\portfolio\portfolio9\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="contact.php" />
+    <None Include="css\style_total.css.bundle" />
+    <None Include="fonts\BebasNeue-webfont.eot" />
+    <None Include="fonts\BebasNeue-webfont.eot%40" />
+    <None Include="fonts\BebasNeue-webfont.ttf" />
+    <None Include="fonts\BebasNeue-webfont.woff" />
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\PTN77F-webfont.eot" />
+    <Content Include="fonts\PTN77F-webfont.ttf" />
+    <Content Include="fonts\PTN77F-webfont.woff" />
+    <None Include="images\icons\icons\Thumbs.db" />
+    <None Include="images\Thumbs.db" />
+    <None Include="js\js_total.js.bundle" />
+    <Content Include="js\js_total.min.js.map">
+      <DependentUpon>js_total.js.bundle</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="twitter\index.php" />
+    <None Include="twitter\lib\tmhOAuth.php" />
+    <None Include="twitter\lib\tmhUtilities.php" />
+    <None Include="_construccion\fonts\graublauwebbold-webfont.eot" />
+    <None Include="_construccion\fonts\graublauwebbold-webfont.ttf" />
+    <None Include="_construccion\fonts\graublauwebbold-webfont.woff" />
+    <None Include="_vCards\cvs\Sergio_Minei_CV.pdf" />
+    <None Include="_vCards\fonts\icomoon\.DS_Store" />
+    <None Include="_vCards\fonts\icomoon\icomoon.eot" />
+    <None Include="_vCards\fonts\icomoon\icomoon.ttf" />
+    <None Include="_vCards\fonts\icomoon\icomoon.woff" />
+    <None Include="_vCards\images\.DS_Store" />
+    <None Include="_vCards\js\.DS_Store" />
+    <None Include="_vCards\php\config.php" />
+    <None Include="_vCards\php\contact.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-ar.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-br.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-ca.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-ch.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-cz.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-de.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-dk.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-es.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-et.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-fi.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-fo.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-fr.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-hu.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-it.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-ja.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-nl.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-no.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-pl.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-ro.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-ru.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-se.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-tr.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-zh.php" />
+    <None Include="_vCards\php\phpMailer\language\phpmailer.lang-zh_cn.php" />
+    <None Include="_vCards\php\phpMailer\LICENSE" />
+    <None Include="_vCards\php\phpMailer\phpmailer.php" />
+    <None Include="_vCards\php\phpMailer\README" />
+    <None Include="_vCards\php\phpMailer\smtp.php" />
+    <None Include="_vCards\php\template\default.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Linnso.Website.BL.BC\Linnso.Website.BL.BC.csproj">
+      <Project>{EB2BF0D2-7118-4455-88AE-A9B5DD9F3101}</Project>
+      <Name>Linnso.Website.BL.BC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Linnso.Website.BL.BE\Linnso.Website.BL.BE.csproj">
+      <Project>{2DB46CF2-CBBC-4AA7-8574-5F6FA0214778}</Project>
+      <Name>Linnso.Website.BL.BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2812</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,5 +1,0 @@
-C:\Users\Sergio Minei\Desktop\Linnso\Softwares\Website\trunk\LinnsoWebsite\Linnso.Website.BL.BE\bin\Debug\Linnso.Website.BL.BE.dll
-C:\Users\Sergio Minei\Desktop\Linnso\Softwares\Website\trunk\LinnsoWebsite\Linnso.Website.BL.BE\bin\Debug\Linnso.Website.BL.BE.pdb
-C:\Users\Sergio Minei\Desktop\Linnso\Softwares\Website\trunk\LinnsoWebsite\Linnso.Website.BL.BE\obj\Debug\Linnso.Website.BL.BE.dll
-C:\Users\Sergio Minei\Desktop\Linnso\Softwares\Website\trunk\LinnsoWebsite\Linnso.Website.BL.BE\obj\Debug\Linnso.Website.BL.BE.pdb
-C:\Users\Sergio Minei\Desktop\Linnso\Softwares\Website\trunk\LinnsoWebsite\Linnso.Website.BL.BE\obj\Debug\Linnso.Website.BL.BE.csprojResolveAssemblyReference.cache
